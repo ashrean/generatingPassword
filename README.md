@@ -22,7 +22,8 @@ those parameters.
 - Once completed type `code .` into VS Code
 
 # Github Account
-https://github.com/ashrean
+[GitHub](https://github.com/ashrean)
+[Deployed Link](https://ashrean.github.io/generatingPassword/)
 
 # Images
 ![alt text](./assets/pics/Screenshot%202023-01-27%20at%2012.01.56%20PM.png)
