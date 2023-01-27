@@ -63,4 +63,9 @@ function generatePassword(){
     return password;
 }
 
-function 
+function createPassword(){
+    var password = generatePassword();
+    var passwordTxt = document.querySelector("#password");
+
+    passwordTxt.value = password;
+}
