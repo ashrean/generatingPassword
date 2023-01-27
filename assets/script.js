@@ -7,10 +7,10 @@ function generatePassword(){
     var passLength = prompt("How long do you want your password to be? Please choose between 8-128 characthers.")
 
     // Confirms the user if they want to include lowercase characters
-    var lowerCase = confirm("Would you like to include lowercase characters?");
+    var lowerChar = confirm("Would you like to include lowercase characters?");
 
     // Confirms the user if they want to include uppercase characters
-    var upperCase = confirm("Would you like to include upppercase characters?");
+    var upperChar = confirm("Would you like to include upppercase characters?");
 
     // Confirms the user if they want to include numbers?
     var numChar = confirm("Would you like to include numbers");
@@ -34,28 +34,33 @@ function generatePassword(){
     }
 
     // varaibles will be created if the confirms come back as true.
-    if (caseLower === true) {
-        usersNewPass += lowercase
+    if (lowercase === true) {
+        newPass += lowerChar
       };
 
-      if (caseUpper === true) {
-        usersNewPass += uppercase
+      if (uppercase === true) {
+        newPass += upperChar
       };
 
-      if (caseNumb === true) {
-        usersNewPass += numbs
+      if (numChar === true) {
+        newPass += numbs
       };
 
-      if (caseSpec === true) {
-        usersNewPass += special
+      if (speicalChar=== true) {
+        newPass += special
       };
+
+      if (lowercase === false && uppercase === false && numChar === false && speicalChar == false) {
+        return alert("Password must contain at least one character set. Please try again.");
+      }
 
       // Lets the user know that if no selection is made
       // an alert will pop saying to try again.
       var password = "";
-    for (var i = 0; i < passwordLength; i++) {
-      password += usersNewPass.charAt(Math.floor(Math.random() * usersNewPass.length));
-    }
+      for (var i = 0; i < passwordLength; i++) {
+        password += newPass.charAt(Math.floor(Math.random() * newPass.length));
+      }
+
 
     // new password will be generated to the console and allows
     // createPassword to function.
