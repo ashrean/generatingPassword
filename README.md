@@ -56,5 +56,5 @@ those parameters.
  ```
 
 # Resources
-[W3-SCHOOLS](https://www.w3schools.com/)
-[MDN-DOCS](https://developer.mozilla.org/en-US/)
+- [W3-SCHOOLS](https://www.w3schools.com/)
+- [MDN-DOCS](https://developer.mozilla.org/en-US/)
